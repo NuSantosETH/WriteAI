@@ -82,7 +82,7 @@ const TopNav: React.FC<TopNavProps> = ({ darkMode, setDarkMode, handleCopyText, 
         <div className="flex items-center gap-4 group cursor-pointer">
           <div className="relative">
             <img 
-              src="/.logo/logo.png" 
+              src="logo/logo.png" 
               alt="WriteAI Logo" 
               className="w-10 h-10 group-hover:opacity-80 transition-opacity"
             />
@@ -225,7 +225,7 @@ export default function App() {
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col items-center mb-12">
           <img 
-            src="/.logo/logo.png" 
+            src="logo/logo.png" 
             alt="WriteAI Logo" 
             className="w-32 h-32 mb-6"
           />
