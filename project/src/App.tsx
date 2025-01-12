@@ -11,6 +11,7 @@ import {
   Copy,
   CheckCheck,
   ExternalLink,
+  Zap,
 } from 'lucide-react';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { LoadingPage } from './components/LoadingPage';
@@ -81,11 +82,8 @@ const TopNav: React.FC<TopNavProps> = ({ darkMode, setDarkMode, handleCopyText, 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4 group cursor-pointer">
           <div className="relative">
-            <img 
-              src="/writeai.png" 
-              alt="WriteAI Logo" 
-              className="w-10 h-10 group-hover:opacity-80 transition-opacity"
-            />
+            <Zap className="w-8 h-8 text-blue-500 group-hover:text-blue-400 transition-colors" />
+            <div className="absolute inset-0 bg-blue-500/20 blur-lg group-hover:blur-xl transition-all" />
           </div>
           <h1 className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 group-hover:from-blue-300 group-hover:to-purple-300 text-transparent bg-clip-text transition-all">
             WriteAI
@@ -224,11 +222,6 @@ export default function App() {
     <div className="container mx-auto px-4 py-8 mt-16">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col items-center mb-12">
-          <img 
-            src="/writeai.png" 
-            alt="WriteAI Logo" 
-            className="w-32 h-32 mb-6"
-          />
           <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 text-center mb-4">
             Welcome to WriteAI
           </h2>
