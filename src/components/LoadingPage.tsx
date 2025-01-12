@@ -51,7 +51,7 @@ export const LoadingPage: React.FC = () => {
           <div className="space-y-6">
             <div className="relative inline-block">
               <img 
-                src="/logo/logo.png" 
+                src="/.logo/logo.png" 
                 alt="WriteAI Logo" 
                 className="w-32 h-32 mx-auto animate-pulse" 
               />
